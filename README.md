@@ -1,5 +1,5 @@
 ### CommandLineFirstPersonShooter
-Small project developed in C++ with javidx9 in one day
+Small program developed in C++ in one day
 
 
 
