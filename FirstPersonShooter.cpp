@@ -86,6 +86,7 @@ int main()
         // CW Rotation
         if (GetAsyncKeyState((unsigned short)'A') & 0x8000)
             fPlayerA -= (0.9f) * fElapsedTime;                          // Anticlockwise
+        
         if (GetAsyncKeyState((unsigned short)'D') & 0x8000)
             fPlayerA += (0.9f) * fElapsedTime;                          // Clockwise
 
@@ -108,6 +109,7 @@ int main()
         {
             fPlayerX -= sinf(fPlayerA) * 5.0f * fElapsedTime;
             fPlayerY -= cosf(fPlayerA) * 5.0f * fElapsedTime;
+            
             if (map[(int)fPlayerY * nMapWidth + (int)fPlayerX] == '#')
             {
                 fPlayerX += sinf(fPlayerA) * 5.0f * fElapsedTime;
